@@ -1,0 +1,239 @@
+{
+   "data": [
+      [
+         "name",
+         "الاسم",
+         false,
+         []
+      ],
+      [
+         "seniority",
+         "الاقدمية",
+         false,
+         []
+      ],
+      [
+         "personal_number",
+         "ت.الشخصية",
+         false,
+         []
+      ],
+      [
+         "batch",
+         "الدفعة",
+         false,
+         []
+      ],
+      [
+         "national_id",
+         "الرقم القومي",
+         false,
+         []
+      ],
+      [
+         "graduation_date",
+         "تاريخ التخرج",
+         false,
+         []
+      ],
+      [
+         "rank",
+         "الرتبة",
+         true,
+         [
+            "ملازم",
+            "ملازم أول",
+            "نقيب",
+            "رائد",
+            "مقدم",
+            "مقدم اح",
+            "عقيد",
+            "عقيد اح",
+            "عميد",
+            "عميد اح",
+            "لواء",
+            "لواء اح"
+         ]
+      ],
+      [
+         "weapon",
+         "السلاح",
+         false,
+         []
+      ],
+      [
+         "religion",
+         "الديانة",
+         false,
+         []
+      ],
+      [
+         "current_unit",
+         "الوحدة الحالية",
+         false,
+         []
+      ],
+      [
+         "college_or_institute",
+         "الكلية/المهعد",
+         false,
+         []
+      ],
+      [
+         "birthOfDate",
+         "تاريخ الميلاد",
+         false,
+         []
+      ],
+      [
+         "address",
+         "جهة الميلاد",
+         false,
+         []
+      ],
+      [
+         "status",
+         "الحالة الاجتماعية",
+         true,
+         [
+            "متزوج",
+            "اعزب"
+         ]
+      ],
+      [
+         "fullAddress",
+         "محل الإقامة تفصيلياً",
+         false,
+         []
+      ],
+      [
+         "phone_number",
+         "رقم التليفون",
+         false,
+         []
+      ],
+      [
+         "email",
+         "البريد الإلكتروني",
+         false,
+         []
+      ],
+      [
+         "curJob",
+         "الوظيفة الحالية",
+         false,
+         []
+      ],
+      [
+         "current_wives",
+         "عدد الزوجات الحاليين",
+         false,
+         []
+      ],
+      [
+         "num_of_children",
+         "عدد الأولاد",
+         false,
+         []
+      ],
+      [
+         "male_children",
+         "ذكور",
+         false,
+         []
+      ],
+      [
+         "female_children",
+         "اناث",
+         false,
+         []
+      ],
+      [
+         "marriage_date",
+         "تاريخ الزواج",
+         false,
+         []
+      ],
+      [
+         "previous_marriages",
+         "عدد الزيجات السابقة",
+         false,
+         []
+      ],
+      [
+         "divorce_date",
+         "تاريخ الإنفصال",
+         false,
+         []
+      ],
+      [
+         "closest_relative",
+         "أقرب الأقارب",
+         false,
+         []
+      ],
+      [
+         "avarol_size",
+         "مقاس الأفرول",
+         false,
+         []
+      ],
+      [
+         "t_shirt_size",
+         "مقاس التيشرت",
+         true,
+         [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL"
+         ]
+      ],
+      [
+         "shose1_size",
+         "مقاس البيادة",
+         false,
+         []
+      ],
+      [
+         "shose2_size",
+         "مقاس الحذاء",
+         false,
+         []
+      ],
+      [
+         "mask_size",
+         "مقاس القناع",
+         true,
+         [
+            "S",
+            "M",
+            "L",
+            "XL"
+         ]
+      ],
+      [
+         "blood_class",
+         "فصيلة الدم",
+         true,
+         [
+            "A",
+            "A+",
+            "B",
+            "B+",
+            "O",
+            "O+",
+            "AB",
+            "AB+"
+         ]
+      ],
+      [
+         "unified_number",
+         "الرقم الموحد",
+         false,
+         []
+      ]
+   ]
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "ArabicBotokufi";
+  src: url("./assets/font/alfont_com_AlFont_com_Araboto-Normal.ttf")
+    format("truetype");
+}
+
+#root {
+  font-family: "ArabicBotokufi";
+}

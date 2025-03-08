@@ -1,0 +1,28 @@
+.transferlist-container {
+  padding: 20px;
+  /* background-color: #f8f9fa; */
+}
+
+
+/* MultiTransferList.css */
+.drop-target-list {
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px;
+  margin-right: 5px;
+  min-height: 50px; /* Minimum height for the list */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  background-color: #e7ecf0; /* Light background color */
+}
+
+.draggable-item {
+  cursor: move; /* Indicate that the item can be dragged */
+  margin-bottom: 5px; /* Space between items */
+  border: 1px solid #ced4da; /* Light border for items */
+  border-radius: 4px; /* Rounded corners for items */
+  padding: 8px; /* Padding inside items */
+  background-color: #ffffff; /* Background color for items */
+}
+
+.draggable-item:hover {
+  background-color: #c3d0dd; /* Slightly darker background on hover */
+}

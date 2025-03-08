@@ -1,0 +1,51 @@
+.filter-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 0px 1px #dee2e7;
+  /* max-width: 400px; */
+  margin: 0 auto;
+}
+
+.filter-title {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.filter-input {
+  margin-bottom: 15px;
+  width: 45%;
+  margin: 12px;
+}
+
+.filter-input .mdb-input {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.filter-input .mdb-input input {
+  padding: 10px;
+  font-size: 1rem;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+input[type="date"] {
+  width: 140px;
+
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .filter-input {
+    margin-bottom: 15px;
+    width: 90%;
+    margin: 10px;
+  }
+}

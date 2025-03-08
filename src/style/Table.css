@@ -1,0 +1,40 @@
+.my-table-card {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .my-table th,
+  .my-table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .my-table th {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: small;
+  }
+  
+  .my-table th:hover {
+    background-color: #0056b3;
+  }
+  
+  .my-table .table-row:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table-row td {
+    padding: 12px 15px;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+  }
+  
+  .my-table-card .pagination {
+    margin-top: 15px;
+    justify-content: center;
+  }
+  

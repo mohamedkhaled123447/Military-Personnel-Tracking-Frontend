@@ -1,0 +1,80 @@
+/* Add this to your CSS file or a <style> block */
+
+.pdf-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+.pdf-info-table th {
+  font-size: large;
+}
+.pdf-info-table th,
+.pdf-info-table td {
+  border: 1px solid #1d1c1c; /* Light gray border */
+  text-align: center;
+}
+
+.pdf-info-table-header {
+  background-color: #afadad; /* Light gray background for headers */
+  font-weight: bold;
+}
+
+.pdf-info-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternating row colors */
+}
+
+.pdf-info-table tbody tr:hover {
+  background-color: #e1e1e1; /* Highlight row on hover */
+}
+
+.pdf-info-table-cell {
+  text-align: center; /* Center align specific cells if needed */
+}
+.pdf-info-container {
+  direction: rtl;
+  display: flex;
+  text-align: right;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 1000;
+}
+.pdf-info-item {
+  width: 45%;
+  padding: 10px;
+  margin: 10px;
+  color: #000;
+}
+.pdf-underline {
+  border-bottom: 3px solid #000;
+}
+.pdf-page {
+  padding: 5mm; /* Ensure content doesn't overlap with the border */
+  border: 10px double black; /* Adjust border thickness and color */
+  box-sizing: border-box;
+  height: 1833px;
+}
+#content-id {
+  padding: 10px;
+  width: 1280px;
+}
+
+.pdf-circle-image {
+  width: 13rem; /* Set width */
+  height: 11rem; /* Set height */
+}
+.pdf-header {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #000;
+}
+
+
+.user-image {
+  border: 2px solid black;
+}
+
+.test1 {
+  margin-right: 33px;
+}
