@@ -3,8 +3,6 @@ node_modules/
 .vscode/
 gitlab_credentials/
 .git-credentials
-*.jpg
-*.png
 *.history
 .env
 .postgres
