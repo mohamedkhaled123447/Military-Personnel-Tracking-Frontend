@@ -13,7 +13,7 @@ export default function App() {
       }}
     >
       <p className="fw-bold" style={{ fontSize: "13px" }}>
-        جميع الحقوق محفوظة للفوج 706 حرب الكترونية &copy; 2024
+        جميع الحقوق محفوظة  &copy; 2024
       </p>
     </div>
   );

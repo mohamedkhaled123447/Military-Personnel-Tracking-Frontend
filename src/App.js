@@ -25,7 +25,6 @@ function App() {
                   <Route key={index} path={path} element={element} />
                 ))}
               </Routes>
-              {!isAuthPage && <Footer />}
             </SettingsProvider>
           </RecordsProvider>
         </UserProvider>

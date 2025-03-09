@@ -203,7 +203,7 @@ export default function ProfilePDF() {
                 <MDBCol className="text-end">
                   <MDBCardImage
                     width={160}
-                    src={`${ip}/media/images/EW.png`}
+                    src={`${ip}/media/images/1958.jpg`}
                     alt="phone"
                     fluid
                   />

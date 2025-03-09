@@ -180,7 +180,7 @@ export default function Profile() {
             <MDBCol className="text-end">
               <MDBCardImage
                 width={200}
-                src={`${ip}/media/images/EW.png`}
+                src={`${ip}/media/images/1958.jpg`}
                 alt="phone"
                 fluid
               />

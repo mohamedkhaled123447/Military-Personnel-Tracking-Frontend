@@ -83,7 +83,7 @@ function Activation() {
         <MDBRow className="g-0 d-flex align-items-center">
           <MDBCol col="6" md="5">
             <MDBCardImage
-              src={`${ip}/media/images/EW.png`}
+              src={`${ip}/media/images/1958.jpg`}
               alt="phone"
               className="rounded-t-5 rounded-tr-lg-0 m-3"
               fluid

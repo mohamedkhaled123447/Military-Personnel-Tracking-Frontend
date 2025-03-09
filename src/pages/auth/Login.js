@@ -26,7 +26,7 @@ function Login() {
     }
   };
   return (
-    <MDBContainer className="my-5">
+    <MDBContainer className="my-5 d-flex justify-content-center align-items-center">
       <MDBCard shadow="none">
         <MDBRow>
           <h1 className="text-center mt-4 fw-bolder">
@@ -41,7 +41,7 @@ function Login() {
         <MDBRow className="g-0 d-flex align-items-center">
           <MDBCol col="6" md="5">
             <MDBCardImage
-              src={`${ip}/media/images/EW.png`}
+              src={`${ip}/media/images/1958.jpg`}
               alt="phone"
               className="rounded-t-5 rounded-tr-lg-0 m-3"
               fluid
@@ -88,7 +88,7 @@ function Login() {
               <div className="d-flex justify-content-around align-items-center">
                 <MDBBtn
                   style={{ verticalAlign: "middle" }}
-                  className="w-50 fs-5 fw-bold"
+                  className="w-100 fs-5 fw-bold"
                   outline
                   onClick={() => navigate("/take-test")}
                 >
