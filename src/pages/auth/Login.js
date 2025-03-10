@@ -25,6 +25,12 @@ function Login() {
       handleLogin();
     }
   };
+  if (!settings.length)
+    return (
+      <div className="vh-100 d-flex align-items-center justify-content-center">
+        <div className="spinner-grow" role="status"></div>
+      </div>
+    );
   return (
     <MDBContainer className="my-5 d-flex justify-content-center align-items-center">
       <MDBCard shadow="none">

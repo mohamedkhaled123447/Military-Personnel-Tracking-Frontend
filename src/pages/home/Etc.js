@@ -30,7 +30,7 @@ function Etc() {
           <span className="text-dark fw-bold"> الملفات </span>
         </div>
 
-        <div
+        {/* <div
           onClick={() => navigate("/backup/")}
           className="w-auto d-flex flex-column align-items-center hover-scale"
         >
@@ -41,7 +41,7 @@ function Etc() {
             style={{ width: "150px", height: "150px" }}
           />
           <span className="text-dark fw-bold"> النسخ الاحتياطية </span>
-        </div>
+        </div> */}
         <div
           onClick={() => navigate("/settings/")}
           className="w-auto d-flex flex-column align-items-center hover-scale"
