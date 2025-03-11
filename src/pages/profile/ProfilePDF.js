@@ -12,9 +12,7 @@ import {
 import { MDBCol, MDBRow, MDBCardImage } from "mdb-react-ui-kit";
 import { useParams } from "react-router-dom";
 import "../../style/ProfilePDF.css";
-import {
-  converTextToArabic
-} from "../../utils/tools";
+import { converTextToArabic } from "../../utils/tools";
 import { useUser } from "../../context/UserContext";
 import SportSection from "../../components/pdfSections/SportSection";
 import EducationSection from "../../components/pdfSections/EducationSection";
@@ -191,6 +189,10 @@ export default function ProfilePDF() {
                     className="user-image"
                     width={140}
                     src={profileData.image}
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = "/man.jpg";
+                    }}
                     alt="phone"
                     fluid
                   />
@@ -227,8 +229,7 @@ export default function ProfilePDF() {
                               {label}
                             </span>
                             <span className="fs-3">
-                              :
-                              {converTextToArabic(profileData[name],label)}
+                              :{converTextToArabic(profileData[name], label)}
                             </span>
                           </p>
                         </div>
@@ -241,7 +242,7 @@ export default function ProfilePDF() {
                               {label}
                             </span>
                             <span className="fs-3">
-                              :{converTextToArabic(profileData[name],label)}
+                              :{converTextToArabic(profileData[name], label)}
                             </span>
                           </p>
                         </div>
@@ -253,7 +254,7 @@ export default function ProfilePDF() {
                               {label}
                             </span>
                             <span className="fs-3">
-                              : {converTextToArabic(profileData[name],label)}
+                              : {converTextToArabic(profileData[name], label)}
                             </span>
                           </p>
                         </div>

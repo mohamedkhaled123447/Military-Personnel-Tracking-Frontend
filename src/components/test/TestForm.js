@@ -33,11 +33,11 @@ function TestForm({ setUserData, test, setTest }) {
       >
         <MDBCardBody className="text-center">
           <MDBCardImage
-            src={
-              value.image
-                ? `${ip}/${value.image}`
-                : "/icons/user.png"
-            }
+            src={`${ip}/${value.image}`}
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = "/icons/user.png";
+            }}
             alt="User"
             className="rounded-circle mb-3"
             style={{ width: "200px", height: "200px" }}

@@ -42,7 +42,6 @@ function DataConfirmation({
   }, []);
 
   if (!selectedTest || !userData) return null;
-
   return (
     <div className="d-flex flex-column align-items-center p-4 mt-4">
       <MDBCard
@@ -51,11 +50,11 @@ function DataConfirmation({
       >
         <MDBCardBody>
           <MDBCardImage
-            src={
-              userData.image
-                ? `${ip}/${userData.image}`
-                : "/icons/user.png"
-            }
+            src={`${ip}/${userData.image}`}
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = "/icons/user.png";
+            }}
             alt="User"
             className="mb-4 rounded-circle"
             style={{ width: "200px", height: "200px" }}

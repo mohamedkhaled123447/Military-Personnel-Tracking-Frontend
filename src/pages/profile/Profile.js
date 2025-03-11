@@ -59,7 +59,7 @@ export default function Profile() {
     }));
   };
   const removeAttribute = (obj, key) => {
-    const { [key]: _, ...newObj } = obj; 
+    const { [key]: _, ...newObj } = obj;
     return newObj;
   };
   const handleUpdateProfileDate = async () => {
@@ -68,17 +68,14 @@ export default function Profile() {
       showAlertSnackbar(Errors[0], "error");
       return;
     }
-    const response = await fetch(
-      `${ip}/userData/userinfo/${profileData.id}/`,
-      {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("access")}`,
-        },
-        body: JSON.stringify(removeAttribute(profileData, "image")),
-      }
-    );
+    const response = await fetch(`${ip}/userData/userinfo/${profileData.id}/`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${localStorage.getItem("access")}`,
+      },
+      body: JSON.stringify(removeAttribute(profileData, "image")),
+    });
     if (!response.ok) {
       // Handle HTTP errors
       showAlertSnackbar("حدث خطا ما", "error");
@@ -117,16 +114,13 @@ export default function Profile() {
     setLoading(true);
     const formData = new FormData();
     formData.append("image", file);
-    const response = await fetch(
-      `${ip}/userData/userinfo/${profileData.id}/`,
-      {
-        method: "PATCH",
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("access")}`,
-        },
-        body: formData,
-      }
-    );
+    const response = await fetch(`${ip}/userData/userinfo/${profileData.id}/`, {
+      method: "PATCH",
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("access")}`,
+      },
+      body: formData,
+    });
     if (!response.ok) {
       // Handle HTTP errors
       showAlertSnackbar("حدث خطا ما", "error");
@@ -151,7 +145,11 @@ export default function Profile() {
                 <MDBCardImage
                   className="profile-image"
                   width={140}
-                  src={!image ? profileData.image : image}
+                  src={profileData.image}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "/man.jpg";
+                  }}
                   onClick={handleImageClick}
                   alt="phone"
                   fluid
